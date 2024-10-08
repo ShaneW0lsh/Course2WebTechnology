@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navigation-list a {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navigation-list a.active {
+    color: tomato;
+}
+
+.navigation-list a:hover {
+    color: #007bff;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 0 20px 20px;
+}
+
+header {
+  background-color: #fff;
+  margin: 0 0 0 20px;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+.about, .advantages, .popular-meals {
+  background-color: #fff;
+  padding-bottom: 20px;
+  max-width: 1000px;
+}
+
+.about h2, .advantages h2, .popular-meals h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about p, .advantages ul, .popular-meals table {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.main-image {
+  width: 50%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.advantages ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.popular-meals table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.popular-meals table, .popular-meals th, .popular-meals td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.popular-meals th {
+  background-color: #f4f4f4;
+}
+
+footer {
+  margin-top: auto;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #007bff;
+}
