@@ -45,7 +45,7 @@ main {
 
 header {
   background-color: #fff;
-  margin: 0 0 0 20px;
+  margin: 20px 0 0 20px;
   text-align: left;
 }
 
@@ -81,11 +81,17 @@ nav ul li a:hover {
   max-width: 1000px;
 }
 
-.about h2, .advantages h2, .popular-meals h2 {
+h2 {
   font-size: 1.8em;
   font-weight: 700;
   margin-bottom: 15px;
 }
+
+/*.about h2, .advantages h2, .popular-meals h2 {*/
+/*  font-size: 1.8em;*/
+/*  font-weight: 700;*/
+/*  margin-bottom: 15px;*/
+/*}*/
 
 .about p, .advantages ul, .popular-meals table {
   font-size: 1.2em;
