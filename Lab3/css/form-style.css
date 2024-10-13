@@ -15,5 +15,9 @@
 .user-order, .user-data {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 30%;
+}
+
+.order-form button, select, .text-input {
+    height: 4vh;
 }
