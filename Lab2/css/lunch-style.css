@@ -94,6 +94,7 @@ form {
 }
 
 @media (max-width: 600px) {
+
     section>.items {
         grid-template-columns: 1fr;
     }
@@ -105,7 +106,7 @@ form {
     }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 601px) and (max-width: 800px) {
 
     section>.items {
         grid-template-columns: repeat(2, 1fr);

@@ -29,7 +29,7 @@
         <h2>Выберите суп</h2>
         <div class="items">
             <div class="item">
-                <img src="img/menu/menu/soups/gazpacho.jpg">
+                <img src="img/menu/menu/soups/gazpacho.jpg" alt="gazpacho">
                 <div class="main-info">
                     <p>195&#8381;</p>
                     <p>Гаспачо</p>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="item">
-                <img src="img/menu/menu/soups/mushroom_soup.jpg">
+                <img src="img/menu/menu/soups/mushroom_soup.jpg" alt="mushroom-soup">
                 <div class="main-info">
                     <p>185&#8381;</p>
                     <p>Грибной суп-пюре</p>
@@ -53,7 +53,7 @@
             </div>
 
             <div class="item">
-                <img src="img/menu/menu/soups/norwegian_soup.jpg">
+                <img src="img/menu/menu/soups/norwegian_soup.jpg" alt="norwegian-soup">
                 <div class="main-info">
                     <p>270&#8381;</p>
                     <p>Норвежский суп</p>
@@ -69,7 +69,7 @@
         <h2>Выберите главное блюдо</h2>
         <div class="items">
             <div class="item">
-                <img src="img/menu/menu/main_course/friedpotatoeswithmushrooms1.jpg">
+                <img src="img/menu/menu/main_course/friedpotatoeswithmushrooms1.jpg" alt="fried-potatoes">
                 <div class="main-info">
                     <p>150&#8381;</p>
                     <p>Жареная картошка с грибами</p>
@@ -81,7 +81,7 @@
             </div>
 
             <div class="item">
-                <img src="img/menu/menu/main_course/lasagna.jpg">
+                <img src="img/menu/menu/main_course/lasagna.jpg" alt="lasagna">
                 <div class="main-info">
                     <p>385&#8381;</p>
                     <p>Лазанья</p>
@@ -93,7 +93,7 @@
             </div>
 
             <div class="item">
-                <img src="img/menu/menu/main_course/chickencutletsandmashedpotatoes.jpg">
+                <img src="img/menu/menu/main_course/chickencutletsandmashedpotatoes.jpg" alt="chicken-cutlets">
                 <div class="main-info">
                     <p>225&#8381;</p>
                     <p>Котлеты из курицы с картофельным пюре</p>
@@ -109,7 +109,7 @@
         <h2>Выберите напиток</h2>
         <div class="items">
             <div class="item">
-                <img src="img/menu/menu/beverages/orangejuice.jpg">
+                <img src="img/menu/menu/beverages/orangejuice.jpg" alt="orange-juice">
                 <div class="main-info">
                     <p>120&#8381;</p>
                     <p>Апельсиновый сок</p>
@@ -121,7 +121,7 @@
             </div>
 
             <div class="item">
-                <img src="img/menu/menu/beverages/applejuice.jpg">
+                <img src="img/menu/menu/beverages/applejuice.jpg" alt="applejuice">
                 <div class="main-info">
                     <p>90&#8381;</p>
                     <p>Яблочный сок</p>
@@ -133,7 +133,7 @@
             </div>
 
             <div class="item">
-                <img src="img/menu/menu/beverages/carrotjuice.jpg">
+                <img src="img/menu/menu/beverages/carrotjuice.jpg" alt="carrot-juice">
                 <div class="main-info">
                     <p>120&#8381;</p>
                     <p>Морковный сок</p>
@@ -158,37 +158,40 @@
                 <h3>Ваш заказ</h3>
                 <label for="select-soup">Суп</label>
                 <select id="select-soup">
-                    <option>Гаспачо</option>
-                    <option>Грибной суп-пюре</option>
-                    <option>Норвежский суп</option>
+                    <option value="">-- Выберите суп --</option>
+                    <option value="gaspacho">Гаспачо</option>
+                    <option value="mushroom-soup">Грибной суп-пюре</option>
+                    <option value="norwegian-soup">Норвежский суп</option>
                 </select>
 
                 <label for="select-main-course">Главное блюдо</label>
                 <select id="select-main-course">
-                    <option>Жареная картошка с грибами</option>
-                    <option>Лазанья</option>
-                    <option>Котлеты из курицы с картофельным пюре</option>
+                    <option value="">-- Выберите главное блюдо --</option>
+                    <option value="fried-potato-with-mushrooms">Жареная картошка с грибами</option>
+                    <option value="lasagna">Лазанья</option>
+                    <option value="chicken-patty-with-potato">Котлеты из курицы с картофельным пюре</option>
                 </select>
 
                 <label for="select-beverage">Напиток</label>
                 <select id="select-beverage">
-                    <option>Апельсиновый сок</option>
-                    <option>Яблочный сок</option>
-                    <option>Морковный сок</option>
+                    <option value="">-- Выберите напиток --</option>
+                    <option value="orange-juice">Апельсиновый сок</option>
+                    <option value="apple-juice">Яблочный сок</option>
+                    <option value="carrot-juice">Морковный сок</option>
                 </select>
 
                 <label for="comment">Комментарий к заказу</label>
-                <textarea id="comment" name="message" rows="4" cols="50"></textarea>
+                <textarea id="comment" name="comment-message" rows="4" cols="50"></textarea>
             </div>
 
             <div class="user-data">
                 <h3>Ваши данные</h3>
 
                 <label for="name-input">Имя</label>
-                <input class="text-input" type="text" id="name-input">
+                <input class="text-input" type="text" id="name-input" name="name-input" required>
 
                 <label for="email-input">Email</label>
-                <input class="text-input" type="text" id="email-input">
+                <input class="text-input" type="text" id="email-input" name="email-input" required>
 
                 <div style="flex-direction: row; margin: 20px 0 5px 0;">
                     <input type="checkbox" id="subscribe">
@@ -196,27 +199,26 @@
                 </div>
 
                 <label for="phone-input">Номер телефона</label>
-                <input class="text-input" type="text" id="phone-input">
+                <input class="text-input" type="text" id="phone-input" name="phone-input" required>
 
                 <label for="address-input">Адрес доставки</label>
-                <input class="text-input" type="text" id="address-input">
+                <input class="text-input" type="text" id="address-input" name="address-input" required>
 
                 <div>
                     <p style="margin: 15px 0 5px 0;">Время доставки:</p>
-                    <input type="radio" id="first-radio-option" name="radio-option">
+                    <input type="radio" id="first-radio-option" name="radio-option" value="as-fast-as-possible" required>
                     <label for="first-radio-option">Как можно скорее</label><br>
 
-                    <input type="radio" id="second-radio-option" name="radio-option">
+                    <input type="radio" id="second-radio-option" name="radio-option" value="specified-time" required>
                     <label for="second-radio-option">К указанному времени</label><br>
-
                 </div>
 
                 <label for="time">Укажите время доставки:</label>
-                <input  class="text-input" type="time" id="time" min="07:00" max="23:00">
+                <input class="text-input" type="time" id="time" min="07:00" max="23:00" name="time-input">
 
                 <div style="margin: 15px 0 0 0; display: flex; justify-content: space-between;">
                     <button style="width: 49%; height: 4vh;" type="submit">Отправить</button>
-                    <button style="width: 49%; height: 4vh;" type="button">Очистить</button>
+                    <button style="width: 49%; height: 4vh;" type="reset">Очистить</button>
                 </div>
             </div>
         </div>
