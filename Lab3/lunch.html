@@ -151,7 +151,7 @@
 
 <div class="order-form">
     <form action="https://httpbin.org/post" method="post">
-        <h2 style="text-align: center; margin-bottom: 5vh">Сделать заказ</h2>
+        <h2>Сделать заказ</h2>
 
         <div class="order-form-content">
             <div class="user-order">
@@ -193,7 +193,7 @@
                 <label for="email-input">Email</label>
                 <input class="text-input" type="text" id="email-input" name="email-input" required="required"/>
 
-                <div style="flex-direction: row; margin: 20px 0 5px 0;">
+                <div class="subscribe-checkbox">
                     <input type="checkbox" id="subscribe" name="subscribe" value="yes"/>
                     <label for="subscribe">Получать информацию о скидках и акциях</label>
                 </div>
@@ -204,14 +204,14 @@
                 <label for="address-input">Адрес доставки</label>
                 <input class="text-input" type="text" id="address-input" name="address-input" required="required"/>
 
-                <fieldset style="border: none; margin-top: 10px">
+                <fieldset class="delivery-time">
                     <legend>Время доставки:</legend>
-                    <div style="display: flex; flex-direction: column">
-                        <label style="margin-top: 5px">
+                    <div class="delivery-options">
+                        <label>
                             <input type="radio" name="radio-option" value="as-fast-as-possible">
                             Как можно быстрее
                         </label>
-                        <label style="margin: 0">
+                        <label>
                             <input type="radio" name="radio-option" value="specified-time">
                             В указанное время
                         </label>
@@ -219,11 +219,11 @@
                 </fieldset>
 
                 <label for="time">Укажите время доставки:</label>
-                <input class="text-input" type="time" id="time" min="07:00" max="23:00" name="time-input"/>
+                <input class="text-input" type="time" id="time" min="07:00" max="23:00" step="300" name="time-input"/>
 
-                <div style="margin: 15px 0 0 0; display: flex; justify-content: space-between;">
-                    <button style="width: 49%; height: 4vh;" type="submit">Отправить</button>
-                    <button style="width: 49%; height: 4vh;" type="reset">Очистить</button>
+                <div class="form-buttons">
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Очистить</button>
                 </div>
             </div>
         </div>
