@@ -79,6 +79,17 @@ function handleReset() {
             currentSelectedDishes[key] = null;
         }
     });
+
+    const chosenDivs = document.querySelectorAll('.chosen');
+
+            chosenDivs.forEach(div => {
+                const pTag = div.querySelector('p');
+
+                if (pTag) {
+                    pTag.textContent = 'Не выбрано';
+                }
+            });
+
     updateSelectedDishListView();
     currentDishPriceSum = 0;
     document.querySelector('.order-price').innerText = currentDishPriceSum;
