@@ -56,26 +56,27 @@
                 <input class="sel selected-soup" name="selected-soup" value="" hidden></input>
                 <input class="sel selected-main-course" name="selected-main-course" value="" hidden></input>
                 <input class="sel selected-beverage" name="selected-beverage" value="" hidden></input>
+                <input class="sel order-price-input" name="price" value="" hidden></input>
 
                 <p class="nothing">Ничего не выбрано</p>
 
                 <div class="chosen hid" category="soup">
-                    <label for="soups-input">Суп</label>
+                    <label for="soups-input" class="dish-label">Суп</label>
                     <p id="soups-input">Суп не выбран</p>
                 </div>
 
                 <div class="chosen hid" category="main-course">
-                    <label for="main-course-input">Главное блюдо</label>
+                    <label for="main-course-input" class="dish-label">Главное блюдо</label>
                     <p id="main-course-input">Главное блюдо не выбрано</p>
                 </div>
 
                 <div class="chosen hid" category="beverage">
-                    <label for="beverage-input">Напиток</label>
+                    <label for="beverage-input" class="dish-label">Напиток</label>
                     <p id="beverage-input">Напиток не выбран</p>
                 </div>
 
-                <p class="hid">Сумма заказа</p>
-                <input class="order-price hid" name="price" >0</p>
+                <p class="hid dish-label">Сумма заказа</p>
+                <p class="order-price hid">0</p>
 
                 <label for="comment">Комментарий к заказу</label>
                 <textarea id="comment" name="comment-message" rows="4" cols="50"></textarea>

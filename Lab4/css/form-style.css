@@ -55,3 +55,10 @@
     width: 49%;
     height: 4vh;
 }
+
+.dish-label, .nothing {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
