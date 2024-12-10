@@ -46,6 +46,10 @@ section h2 {
     border: 2px solid tomato;
 }
 
+.selected-product {
+    border: 2px solid tomato;
+}
+
 h2 {
     margin: 40px 0 10px 0;
 }

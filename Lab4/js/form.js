@@ -25,7 +25,12 @@ function addDish(event) {
     const inputTag = document.querySelector('.selected-' + dishCategory);
     inputTag.setAttribute('value', dishItem.getAttribute('dish-data'));
 
-    // console.log(inputTag.getAttribute('value'));
+
+    const itemsInThisCategory = document.querySelectorAll(`.items .item[dish-category="${dishCategory}"]`);
+    itemsInThisCategory.forEach(item => item.classList.remove('selected-product'));
+    console.log(itemsInThisCategory);
+    dishItem.classList.add('selected-product');
+
 
     updateSelectedDishListView();
 }
