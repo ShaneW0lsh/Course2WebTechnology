@@ -99,4 +99,8 @@ function handleReset() {
     currentDishPriceSum = 0;
     document.querySelector('.order-price').innerText = currentDishPriceSum;
     document.querySelector('.order-price-input').setAttribute('value', currentDishPriceSum);
+
+    const itemsInThisCategory = document.querySelectorAll(`.items .item`);
+    console.log(itemsInThisCategory);
+    itemsInThisCategory.forEach(item => item.classList.remove('selected-product'));
 }
