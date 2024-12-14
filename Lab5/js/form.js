@@ -23,6 +23,7 @@ function addDish(event) {
     currentSelectedDishes[dishMapper[dishCategory]] = dishItem.getAttribute('dish-data');
 
     const inputTag = document.querySelector('.selected-' + dishCategory);
+    console.log(dishCategory);
     inputTag.setAttribute('value', dishItem.getAttribute('dish-data'));
 
     const itemsInThisCategory = document.querySelectorAll(`.items .item[dish-category="${dishCategory}"]`);

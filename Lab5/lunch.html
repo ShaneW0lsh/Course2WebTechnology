@@ -27,30 +27,54 @@
 <main>
     <section class="soup">
         <h2>Выберите суп</h2>
+        <div class="filters"> 
+            <button class="filter-btn" data-kind="fish">Рыбный</button>
+            <button class="filter-btn" data-kind="meat">Мясной</button>
+            <button class="filter-btn" data-kind="veg">Вегетарианский</button>
+        </div>
         <div class="items">
 
         </div>
     </section>
     <section class="main-course">
         <h2>Выберите главное блюдо</h2>
+        <div class="filters">
+            <button class="filter-btn" data-kind="fish">Рыбное</button>
+            <button class="filter-btn" data-kind="meat">Мясное</button>
+            <button class="filter-btn" data-kind="veg">Вегетарианское</button>
+        </div>
         <div class="items">
 
         </div>
     </section>
     <section class="salads-starters">
         <h2>Выберите салат или стартер</h2>
+        <div class="filters">
+            <button class="filter-btn" data-kind="fish">Рыбный</button>
+            <button class="filter-btn" data-kind="meat">Мясной</button>
+            <button class="filter-btn" data-kind="veg">Вегетарианский</button>
+        </div>
         <div class="items">
 
         </div>
     </section>
     <section class="beverage">
         <h2>Выберите напиток</h2>
+        <div class="filters">
+            <button class="filter-btn" data-kind="cold">Холодный</button>
+            <button class="filter-btn" data-kind="hot">Горячий</button>
+        </div>
         <div class="items">
 
         </div>
     </section>
     <section class="desserts">
         <h2>Выберите десерт</h2>
+        <div class="filters">
+            <button class="filter-btn" data-kind="small">Маленькая порция</button>
+            <button class="filter-btn" data-kind="medium">Средняя порция</button>
+            <button class="filter-btn" data-kind="large">Большая порция</button>
+        </div>
         <div class="items">
 
         </div>
@@ -68,6 +92,8 @@
                 <input class="sel selected-soup" name="selected-soup" value="" hidden></input>
                 <input class="sel selected-main-course" name="selected-main-course" value="" hidden></input>
                 <input class="sel selected-beverage" name="selected-beverage" value="" hidden></input>
+                <input class="sel selected-salads-starters" name="selected-salads-starters" value="" hidden></input>
+                <input class="sel selected-desserts" name="selected-desserts" value="" hidden></input>
                 <input class="sel order-price-input" name="price" value="" hidden></input>
 
                 <p class="nothing">Ничего не выбрано</p>
@@ -82,9 +108,19 @@
                     <p id="main-course-input">Главное блюдо не выбрано</p>
                 </div>
 
+                <div class="chosen hid" category="salads-starters">
+                    <label for="salads-starters-input" class="dish-label">Салат или стартер</label>
+                    <p id="salads-starters-input">Салат или стартер не выбран</p>
+                </div>
+
                 <div class="chosen hid" category="beverage">
                     <label for="beverage-input" class="dish-label">Напиток</label>
                     <p id="beverage-input">Напиток не выбран</p>
+                </div>
+
+                <div class="chosen hid" category="desserts">
+                    <label for="desserts-input" class="dish-label">Десерт</label>
+                    <p id="desserts-input">Десерт не выбран</p>
                 </div>
 
                 <p class="hid dish-label">Сумма заказа</p>
