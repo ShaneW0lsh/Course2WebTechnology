@@ -1,0 +1,181 @@
+.order-form {
+    margin: 20px;
+}
+
+.order-form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.order-form-content label {
+    margin: 12px 0 5px 0;
+}
+
+.user-order, .user-data {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.order-form button, select, .text-input {
+    height: 4vh;
+}
+.order-form h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.subscribe-checkbox {
+    flex-direction: row;
+    margin: 20px 0 5px 0;
+}
+
+.delivery-time {
+    border: none;
+    margin-top: 10px;
+}
+
+.delivery-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-options label {
+    margin-top: 5px;
+}
+
+.form-buttons {
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons button {
+    width: 49%;
+    height: 4vh;
+}
+
+.dish-label, .nothing {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    color: #127e12;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: rgba(0, 123, 0, 0.5);
+    color: #ffffff;
+}
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.notification h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.notification p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.notification button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.notification button:hover {
+    background-color: tomato;
+}
+
+.notification button .thumbs-up {
+    margin-left: 8px;
+}
+
+.notification input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.notification textarea {
+    width: calc(100% - 20px);
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.notification .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.notification .form-group label {
+    margin-left: 10px;
+}
+
+.notification .form-group input {
+    margin-left: 10px;
+}
+
+.notification fieldset {
+    margin-bottom: 15px;
+    border: none;
+}
+
+.notification legend {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
