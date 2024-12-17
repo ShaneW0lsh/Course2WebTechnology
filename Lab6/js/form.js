@@ -116,12 +116,15 @@ function checkOrder() {
     }
     if (!currentSelectedDishes.soup && !currentSelectedDishes.mainCourse) {
         missingItems.push('Выберите суп или главное блюдо');
+        return missingItems;
     }
     if (currentSelectedDishes.soup && !currentSelectedDishes.mainCourse && !currentSelectedDishes.saladsStarters) {
         missingItems.push('Выберите главное блюдо/салат/стартер');
+        return missingItems;
     }
     if ((currentSelectedDishes.saladsStarters || currentSelectedDishes.desserts || currentSelectedDishes.beverage) && !currentSelectedDishes.soup && !currentSelectedDishes.mainCourse) {
         missingItems.push('Выберите главное блюдо');
+        return missingItems;
     }
     if (!currentSelectedDishes.beverage) {
         missingItems.push('Выберите напиток');
